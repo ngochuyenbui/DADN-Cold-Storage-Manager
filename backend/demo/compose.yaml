@@ -1,0 +1,39 @@
+services:
+  backend:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: demo-backend
+    depends_on:
+      - postgres
+      - rabbitmq
+    environment:
+      - SPRING_DOCKER_COMPOSE_ENABLED=false
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/mydatabase
+      - SPRING_DATASOURCE_USERNAME=myuser
+      - SPRING_DATASOURCE_PASSWORD=secret
+      - SPRING_RABBITMQ_HOST=rabbitmq
+      - SPRING_RABBITMQ_PORT=5672
+      - SPRING_RABBITMQ_USERNAME=myuser
+      - SPRING_RABBITMQ_PASSWORD=secret
+    ports:
+      - "8080:8080"
+
+  postgres:
+    platform: linux/amd64
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=do_an_dn'
+      - 'POSTGRES_PASSWORD=Nghia1703'
+      - 'POSTGRES_USER=postgres'
+    ports:
+      - '5432:5432'
+  rabbitmq:
+    platform: linux/amd64
+    image: 'rabbitmq:latest'
+    environment:
+      - 'RABBITMQ_DEFAULT_PASS=secret'
+      - 'RABBITMQ_DEFAULT_USER=myuser'
+    ports:
+      - '5672:5672'

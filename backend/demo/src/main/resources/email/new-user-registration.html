@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshGuard - Thông tin đăng nhập</title>
+</head>
+<body style="margin:0;padding:0;background:#080e1d;font-family:Arial, Helvetica, sans-serif;color:rgb(110, 216, 204);">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#080e1d;padding:36px 12px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="720" cellspacing="0" cellpadding="0" border="0" style="max-width:720px;width:100%;background:#131d31;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,0.42);border:1px solid rgba(127,224,219,0.10);">
+          <tr>
+            <td style="background:#0b1220;padding:28px 28px;text-align:center;border-bottom:1px solid rgba(127,224,219,0.10);">
+              <div style="margin-top:14px;font-size:34px;line-height:1.1;color:#f3f7ff;font-weight:800;letter-spacing:0.2px;">FreshGuard</div>
+              <div style="margin-top:6px;font-size:13px;line-height:1.6;color:#9aa9c5;">Cold Storage Manager</div>
+              <div style="margin-top:16px;display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(127,224,219,0.10);color:#7fe0db;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
+                Thông tin đăng nhập</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:32px 28px 28px 28px;font-size:16px;line-height:1.7;color:rgb(110, 216, 204);">
+
+              <div style="margin:0 0 24px 0;padding:18px 20px;border:1px solid rgba(127,224,219,0.14);background:rgba(127,224,219,0.05);border-radius:14px;color:#bfeceb;">
+                Bạn đã hoàn tất tạo tài khoản trên <strong>FreshGuard</strong>. Vui lòng
+                <a href="${loginUrl}" target="_blank" style="color:#7fe0db;font-weight:700;text-decoration:underline;text-decoration-color: #7fe0db;">đăng nhập</a>
+                và
+                <a href="${changePasswordUrl}" target="_blank" style="color:#7fe0db;font-weight:700;text-decoration:underline;">đổi mật khẩu</a>
+                ngay sau lần đăng nhập đầu tiên.
+              </div>
+
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid rgba(127,224,219,0.12);border-radius:16px;font-size:15px;">
+                <tr>
+                  <td style="width:34%;padding:16px 18px;background:#0f1728;border-bottom:1px solid rgba(127,224,219,0.10);font-weight:700;color:#9aa9c5;">User Email :</td>
+                  <td style="padding:16px 18px;background:#151f35;border-bottom:1px solid rgba(127,224,219,0.10);color:#7fe0db;font-weight:700;"><a href="mailto:${email}" style="color:#7fe0db !important;text-decoration:none !important;">${email}</a></td>
+                </tr>
+                <tr>
+                  <td style="padding:16px 18px;background:#0f1728;border-bottom:1px solid rgba(127,224,219,0.10);font-weight:700;color:#9aa9c5;">User Password :</td>
+                  <td style="padding:16px 18px;background:#151f35;border-bottom:1px solid rgba(127,224,219,0.10);color:#f3f7ff;">${password}</td>
+                </tr>
+                <tr>
+                  <td style="padding:16px 18px;background:#0f1728;border-bottom:1px solid rgba(127,224,219,0.10);font-weight:700;color:#9aa9c5;">First Name :</td>
+                  <td style="padding:16px 18px;background:#151f35;border-bottom:1px solid rgba(127,224,219,0.10);color:#f3f7ff;">${firstName}</td>
+                </tr>
+                <tr>
+                  <td style="padding:16px 18px;background:#0f1728;border-bottom:1px solid rgba(127,224,219,0.10);font-weight:700;color:#9aa9c5;">Last Name :</td>
+                  <td style="padding:16px 18px;background:#151f35;border-bottom:1px solid rgba(127,224,219,0.10);color:#f3f7ff;">${lastName}</td>
+                </tr>
+                <tr>
+                  <td style="padding:16px 18px;background:#0f1728;border-bottom:1px solid rgba(127,224,219,0.10);font-weight:700;color:#9aa9c5;">Username :</td>
+                  <td style="padding:16px 18px;background:#151f35;border-bottom:1px solid rgba(127,224,219,0.10);color:#f3f7ff;">${username}</td>
+                </tr>
+                <tr>
+                  <td style="padding:16px 18px;background:#0f1728;font-weight:700;color:#9aa9c5;">Role :</td>
+                  <td style="padding:16px 18px;background:#151f35;color:#f3f7ff;">${role}</td>
+                </tr>
+              </table>
+
+              <div style="margin:24px 0 0 0;padding:16px 18px;border-left:4px solid #7fe0db;background:rgba(127,224,219,0.06);border-radius:12px;color:#dbe6ff;">
+                <strong style="color:#7fe0db;">Luu y:</strong> Vui lòng bảo mật thông tin đăng nhập và <a href="${changePasswordUrl}" target="_blank" style="color:#7fe0db;font-weight:700;text-decoration:underline;">đổi mật khẩu</a> ngay sau khi đăng nhập lần dau.
+              </div>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

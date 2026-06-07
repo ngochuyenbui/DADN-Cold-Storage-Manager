@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Local fallback schema for shadcn components config",
+  "description": "Permissive local schema used when remote schema is unavailable or untrusted.",
+  "type": "object",
+  "additionalProperties": true
+}
